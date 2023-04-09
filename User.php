@@ -1,12 +1,9 @@
 
 <?php
- 
-// Username is root
 $user = 'root';
 $password = '';
  
-// Database name is geeksforgeeks
-$database = 'phplab';
+$database = 'phplab04';
  
 // Server is localhost with
 // port number 3306
@@ -14,14 +11,12 @@ $servername='localhost';
 $mysqli = new mysqli($servername, $user,
                 $password, $database);
  
-// Checking for connections
 if ($mysqli->connect_error) {
     die('Connect Error (' .
     $mysqli->connect_errno . ') '.
     $mysqli->connect_error);
 }
  
-// SQL query to select data from database
 $sql = " SELECT * FROM user ";
 $result = $mysqli->query($sql);
 //$mysqli->close();
@@ -110,8 +105,7 @@ $dbhost = 'localhost';
    //select
    mysqli_select_db( $conn,$dbname );
 
-   //create table
-//    $sql = 'CREATE TABLE user( user_id INT NOT NULL AUTO_INCREMENT,
+  //    $sql = 'CREATE TABLE user( user_id INT NOT NULL AUTO_INCREMENT,
 //    user_name VARCHAR(20) NOT NULL,
 //    user_email  VARCHAR(20) NOT NULL,
 //    gender   INT NOT NULL,

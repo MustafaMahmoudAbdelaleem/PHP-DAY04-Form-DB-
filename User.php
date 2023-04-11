@@ -47,7 +47,7 @@
     <div class="container mt-5">
         <header class="my-4">           
                 <div>
-                    <button class="btn btn-success"><a class="nav-link text-light" href="./index.html" target="_blank">Create new user</a></button>
+                    <button class="btn btn-success"><a class="nav-link text-light" href="./Form.html" target="_blank">Create new user</a></button>
                 </div>            
         </header>
         <hr>
